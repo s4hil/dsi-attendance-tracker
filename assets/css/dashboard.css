@@ -1,0 +1,113 @@
+main {
+	width: 100vw;
+	height: 100vh;
+}
+
+.wave,{
+	width: 100%;
+	height: 100%;
+
+}
+
+
+.main-content {
+	position: absolute;
+	top: 0;
+	padding: .5rem;
+	width: 100%;
+}
+
+.main-content * {
+	padding-top: .25rem;
+}
+
+.top-bar {
+	font-size: 1.5rem;
+	border-bottom: 1px solid #fff;
+	padding: .25rem;
+	color: #A5C9CA;
+	font-weight: 600;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-bar .logo {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+}
+
+.middle-bar {
+	color: #fff;
+	font-weight: 300;
+	font-size: .8rem;
+}
+
+.student-name {
+	color: #E7F6F2;
+	font-size: 1.25rem;
+}
+
+
+.icons-container {
+	padding: 1rem;
+	margin-top: 6rem;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+.row_1, .row_2 {
+	display: flex;
+	justify-content: center;
+}
+
+.icon-holder {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+	width: 8rem;
+	margin: 1rem;
+	padding: 1rem;
+	font-size: .85rem;
+	border-radius: 8px;
+	background: #dedede;
+	box-shadow:  20px 20px 30px #c4c4c4,
+	             -20px -20px 30px #ffffff;
+}
+
+.icon-holder img{
+	width: 70%;
+	height: auto;
+}
+
+.icon-holder:hover {
+	position: relative;
+	top: -5px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+	.wave, .wave img  {
+		height: 40vh;
+	}
+	.wave {
+		overflow: hidden;
+	}
+	* {
+		font-size: small;
+	}
+	.icons-container {
+		
+		flex-direction: column;
+	}
+
+}
